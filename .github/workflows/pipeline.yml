@@ -9,8 +9,8 @@ on:
       - main
 
 jobs:
-  deploy:
-    runs-on: windows-2016
+  build:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
@@ -25,4 +25,16 @@ jobs:
       - name: Build
         run: npm run build
       - name: Test
-        run: npm run test 
+        run: npm run test
+  
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Heroku
+        if: ${{ github.event_name == 'push' }}
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{secrets.HEROKU_APP_NAME}} #Must be unique in Heroku
+          heroku_email: ${{secrets.HEROKU_EMAIL}}  
