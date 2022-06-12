@@ -1,0 +1,42 @@
+{
+  "name": "is-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "start": "node index.js",
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NahuelVazquez/IS-CI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NahuelVazquez/IS-CI/issues"
+  },
+  "homepage": "https://github.com/NahuelVazquez/IS-CI#readme",
+  "dependencies": {
+    "express": "4.18.1"
+  },
+  "devDependencies": {
+    "jest": "28.1.1",
+    "nodemon": "2.0.16",
+    "standard": "17.0.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json",
+    "env": {
+      "jest": true
+    }
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
