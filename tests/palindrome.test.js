@@ -3,7 +3,7 @@ const { palindrome } = require('../utils/for_testing')
 test('palindrome of shakira', () => {
   const result = palindrome('shakira')
 
-  expect(result).toBe('arikah')
+  expect(result).toBe('arikahs')
 })
 
 test('palindrome of empty string', () => {
