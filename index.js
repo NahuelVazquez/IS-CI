@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 
 // definimos un puerto para HTTP
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
 
 app.get('/health', (req, res) => {
   res.send('ok')
@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 })
 
 // Comienza a escuchar el puerto definido 3000
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log('Listen on the port 3000')
 })
 
