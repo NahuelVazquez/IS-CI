@@ -18,9 +18,6 @@ const palindrome = (string) => {
     .join('') // convierte en un string
 }
 
-module.exports = {
-  palindrome
-}
 // Creamos una ruta para el directorio raíz en este caso solo envía el texto 'Hello world!!!' pero es común que se envíe una vista (archivo HTML)
 app.get('/', (req, res) => {
   res.send(palindrome('shakira'))
@@ -30,3 +27,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log('Listen on the port 3000')
 })
+
+module.exports = {
+  palindrome
+}
