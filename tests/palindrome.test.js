@@ -1,7 +1,7 @@
 const { palindrome } = require('../utils/for_testing')
 
 test('palindrome of shakira', () => {
-  const result = palindrome('shakira')
+  const result = palindrome('nahuel')
 
   expect(result).toBe('arikahs')
 })

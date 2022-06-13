@@ -18,9 +18,9 @@ app.get('/health', (req, res) => {
 //     .join('') // convierte en un string
 // }
 
-// Creamos una ruta para el directorio raíz en este caso solo envía el texto 'Hello world!!!' pero es común que se envíe una vista (archivo HTML)
+// Creamos una ruta para el directorio raíz
 app.get('/', (req, res) => {
-  res.send(palindrome('shakir'))
+  res.send(palindrome('shakira'))
 })
 
 // Comienza a escuchar el puerto definido 3000

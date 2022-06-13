@@ -8,10 +8,10 @@
   },
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "node index.js",
     "lint": "eslint .",
     "build": "node utils/for_testing.js",
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
