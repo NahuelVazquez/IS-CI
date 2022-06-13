@@ -7,9 +7,9 @@
     "test": "tests"
   },
   "scripts": {
-    "dev": "nodemon index.js",
+    "start": "nodemon index.js",
     "lint": "eslint .",
-    "build": "node index.js",
+    "build": "node utils/for_testing.js",
     "test": "jest --verbose"
   },
   "repository": {

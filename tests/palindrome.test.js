@@ -1,4 +1,4 @@
-const { palindrome } = require('../index')
+const { palindrome } = require('../utils/for_testing')
 
 test('palindrome of shakira', () => {
   const result = palindrome('shakira')
