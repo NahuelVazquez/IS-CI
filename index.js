@@ -20,7 +20,7 @@ app.get('/health', (req, res) => {
 
 // Creamos una ruta para el directorio raíz
 app.get('/', (req, res) => {
-  res.send(palindrome('shakira'))
+  res.send(palindrome('shakira'))  
 })
 
 // Comienza a escuchar el puerto definido 3000
