@@ -24,6 +24,8 @@ jobs:
         run: npm run lint 
       - name: Test
         run: npm run test
+      - name: Build
+        run: npm run build
       - uses: ravsamhq/notify-slack-action@v1
         if: always()
         with:
