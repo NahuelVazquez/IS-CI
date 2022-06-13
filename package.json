@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "nodemon index.js",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
     "lint": "eslint .",
     "build": "node utils/for_testing.js",
     "test": "jest --verbose"
