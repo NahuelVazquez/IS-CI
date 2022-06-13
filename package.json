@@ -9,8 +9,7 @@
   "scripts": {
     "dev": "nodemon index.js",
     "lint": "eslint .",
-    "start": "node index.js",
-    "build": "node utils/for_testing.js",
+    "start": "node utils/for_testing.js",
     "test": "jest --verbose"
   },
   "repository": {
