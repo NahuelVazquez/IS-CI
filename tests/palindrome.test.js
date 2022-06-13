@@ -1,4 +1,4 @@
-const { palindrome } = require('index.js')
+const { palindrome } = require('../index.js')
 
 test('palindrome of shakira', () => {
   const result = palindrome('shakira')
